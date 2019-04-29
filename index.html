@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+  <title>Sweets</title>
+  <script src="js/jquery-3.2.0.min.js"></script>
+  <script src="js/init.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div class="name">&copy; Chih-Yi Lin</div>
+<div id="container">
+  <span id="cursor">|</span>
+</div>
+
+<div id="floatingContainer"></div>
+
+<script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+                
+</script>
+<audio id="sound" src="assets/crack.mp3" ></audio>
+<audio id="sound2" src="assets/burp.mp3" ></audio>
+<audio id="sound3" src="assets/yum.mp3" ></audio>
+<audio id="sound4" src="assets/wrapper.mp3" ></audio>
+<audio id="sound5" src="assets/chew.mp3" ></audio>
+
+
+<p id="sentence">
+ <img src="assets/t.png" style="margin-right:10px";/><img src="assets/a.png" style="margin-right:10px";/><img src="assets/s.png" style="margin-right:10px";/><img src="assets/t2.png" style="margin-right:10px";/><img src="assets/e.png" style="margin-right:10px";/> <img src="assets/t3.png" style="margin-right:10px";/><img src="assets/h.png" style="margin-right:10px";/><img src="assets/e.png" style="margin-right:10px";/><br><img src="assets/r.png" style="margin-right:10px";/><img src="assets/a.png" style="margin-right:10px";/><img src="assets/i.png" style="margin-right:10px";/><img src="assets/n.png" style="margin-right:10px";/><img src="assets/b.png"/><img src="assets/o.png" style="margin-right:10px";/><img src="assets/w.png" style="margin-right:10px";/> !<span id="cursor2">|</span>
+</p>  
+
+
+ 
+<script>
+$(document).on("keypress", function(e){
+  $( "p" ).remove();
+});
+</script>
+
+</body>
+</html>
+
